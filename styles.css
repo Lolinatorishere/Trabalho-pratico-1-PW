@@ -1,0 +1,43 @@
+body{
+    background-color: white;
+
+}
+
+.header {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    height: 50px;
+	color: white;
+}
+
+.item-header-space-between {
+    order: 0;
+    flex-grow: 1;
+	flex-shrink: 0;
+}
+
+
+.item-header-logo {
+    
+	flex-grow: 0.3;
+}
+
+
+.item-header-logo h1{
+    color: #64CCC9;
+    font-family: 'Mukta', sans-serif;
+}
+.item-header-buffer {
+    
+	flex-grow: 0.15;
+
+}
+
+.item-header {
+    
+	flex-grow: 0.1;
+
+}
+
+
