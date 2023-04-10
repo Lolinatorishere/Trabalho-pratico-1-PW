@@ -1,43 +1,131 @@
 body{
     background-color: white;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
     display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 50px;
-	color: white;
+    height: 8%;
+    color: white;
+    align-items: center;
+}
+
+.item-header {   
+    justify-content: center;
+    text-align:left;
+    flex-grow: 0.2;
 }
 
 .item-header-space-between {
     order: 0;
-    flex-grow: 1;
+    flex-grow: 0.4;
 	flex-shrink: 0;
 }
 
-
 .item-header-logo {
-    
-	flex-grow: 0.3;
+	flex-grow: 0.2;
 }
 
-
-.item-header-logo h1{
+.item-header-logo a{
+    text-decoration: none;
     color: #64CCC9;
     font-family: 'Mukta', sans-serif;
 }
+
+.item-header a{
+    padding: 5%;  
+    text-decoration: none;
+    color: #64CCC9;
+    text-align: center;
+}
+
 .item-header-buffer {
-    
 	flex-grow: 0.15;
+}
+
+.index-content{
+    margin: 0 -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-cover {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.index-cover div{
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(255,255,255,1) 100%);
+}
+
+.index-cover img {
+    object-fit: cover;
+    width: 100%; 
+}
+
+.index-item{ 
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;    
+}
+
+.index-item-row{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.item-header {
+.index-item-content{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.index-item-row-content p{
+    width: 80%;
+}
+.index-item-row-content img{
+    width: 20%;
+}
+
+.index-item h1{
+    width: 100%;
+}
+
+.index-item p{
+    padding: auto;
+    margin-bottom: 0;
+    text-align: left;
     
-	flex-grow: 0.1;
-
 }
 
 
+.index-item img{
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table th{
+    border: solid 2px black;
+}
+
+table td{
+    border: solid 1px black;
+    text-align: center;
+}
